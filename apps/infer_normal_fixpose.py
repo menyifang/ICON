@@ -188,7 +188,7 @@ if __name__ == "__main__":
         per_data_lst = []
 
         # load optimed smpl pt
-        opti_smpl_path = os.path.join('/data/qingyao/neuralRendering/mycode/pretrainedModel/ICON-master/data', "optimed_smpl_%s.pt"%data['name'])
+        opti_smpl_path = "optimed_smpl_%s.pt"%data['name']
         # load pt
         opti_dict = torch.load(opti_smpl_path)
         optimed_pose = opti_dict['optimed_pose']
